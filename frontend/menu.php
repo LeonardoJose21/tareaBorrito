@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WorkFlow</title>
+  <title>E&L</title>
   <link rel="icon" href="favicon.ico" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -27,15 +27,9 @@
                     <a class="nav-link" href="clientes.php">Clientes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="reserva.php">Ventas</a>
+                    <a class="nav-link" href="reserva.php">Reserva</a>
                   </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="pagos.php">Ventas</a>
-                  </li>
-
-
-                
                   <li class="nav-item">
                     <a class="nav-link d-flex gap-1 align-items-center" href="index.php">Cerrar Seccion  <span class="badge text-bg-secondary">X</span></a>
                   </li>
@@ -53,7 +47,7 @@
                 
                 <div class="card-body" id="card">
                   <h5 class="card-title">Gestiona!</h5>
-                  <p class="card-text">Administra tus recursos de la mejor manera!</p>
+                  <p class="card-text">Administra tus viajes de la mejor manera!</p>
                 </div>
               </div>
             </div>
@@ -62,7 +56,7 @@
                 
                 <div class="card-body" id="card">
                   <h5 class="card-title">Mejora!</h5>
-                  <p class="card-text">Mejora tus tus tiempos de respuesta en decisiones</p>
+                  <p class="card-text">Mejora  tus tiempos de respuesta en decisiones</p>
                 </div>
               </div>
             </div>
@@ -78,7 +72,7 @@
       </section>
 
       <section class="overflow-hidden py-5">
-        <h1 class="text-center fs-1"  style="color: #F24C3D;">----- M&A -----</h1>
+        <h1 class="text-center fs-1"  style="color: #F24C3D;">----- E&L -----</h1>
       </section>
 
 
