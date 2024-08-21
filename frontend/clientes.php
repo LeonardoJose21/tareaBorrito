@@ -27,12 +27,12 @@
               <div class="collapse navbar-collapse fw-bolder" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="inventario.php">Inventario</a>
+                    <a class="nav-link" href="clientes.php">Clientes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="ventas.php">Ventas</a>
+                    <a class="nav-link" href="reserva.php">Reserva</a>
                   </li>
-                
+
                   <li class="nav-item">
                     <a class="nav-link d-flex gap-1 align-items-center" href="index.php">Cerrar Seccion  <span class="badge text-bg-secondary">X</span></a>
                   </li>
@@ -44,12 +44,13 @@
     </header>
 
 
+
 <section class="overflow-hidden d-flex flex-column gap-3 px-2 py-4">
 <div class="d-flex gap-1 align-items-center">
         <nav class="navbar bg-body-tertiary border-0 m-0 p-0">
             <div class="container-fluid">
               <form class="d-flex" role="search" method="post" action="busquedaInventario.php" >
-                <input class="form-control me-3 " type="text" name="producto" placeholder="Buscar producto" aria-label="Search">
+                <input class="form-control me-3 " type="text" name="producto" placeholder="Buscar cliente" aria-label="Search">
                 <button class="btn rounded-3" type="submit" style="background-color: #F24C3D; color:#F2F2F2;">Buscar</button>
               </form>
             </div>
@@ -59,24 +60,24 @@
 </div>
 
 <form method="post" action="add_inventario.php">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label" style="color: #F2F2F2;">Nombre</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nombre" name="nombre">
-        </div>
         <div class="row">
+            <div class="col">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nombre" name="nombre">
+            </div>
+
             <div class="col">
                 <input type="text" class="form-control" placeholder="Apellido" aria-label="apellido" name="apellido">
             </div>
+        </div>
+        <div class="row">
             <div class="col">
                 <input type="text" class="form-control" placeholder="Email" aria-label="Email" name="Email">
             </div>
-        </div>     
-        <div class="row">
             <div class="col">
-                <input type="text" class="form-control" placeholder="Telefono" aria-label="Telefono" name="provedor">
+                <input type="text" class="form-control" placeholder="Telefono" aria-label="Telefono" name="telefono">
             </div>
-        
-        </div>
+        </div>     
+      
         <div class="p-2 d-flex justify-content-center">
             <button type="submit" type="submit" class="btn btn-primary border-0 btn-outline-light fw-bolder" style="background-color: #F2F2F2; color: #F24C3D;">Guardar</button>
         </div>
