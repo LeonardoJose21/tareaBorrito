@@ -26,9 +26,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="clientes.php">Clientes</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="reserva.php">Reserva</a>
-                  </li>
+                 
 
                   <li class="nav-item">
                     <a class="nav-link d-flex gap-1 align-items-center" href="index.php">Cerrar Seccion  <span class="badge text-bg-secondary">X</span></a>
