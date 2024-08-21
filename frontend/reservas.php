@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WorkFlow</title>
+  <title>E&l</title>
   <link rel="icon" href="favicon.ico" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -27,12 +27,12 @@
               <div class="collapse navbar-collapse fw-bolder" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="inventario.php">Inventario</a>
+                    <a class="nav-link" href="clientes.php">Clientes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="ventas.php">Ventas</a>
+                    <a class="nav-link" href="reserva.php">Reserva</a>
                   </li>
-                
+
                   <li class="nav-item">
                     <a class="nav-link d-flex gap-1 align-items-center" href="index.php">Cerrar Seccion  <span class="badge text-bg-secondary">X</span></a>
                   </li>
@@ -44,12 +44,13 @@
     </header>
 
 
+
 <section class="overflow-hidden d-flex flex-column gap-3 px-2 py-4">
 <div class="d-flex gap-1 align-items-center">
         <nav class="navbar bg-body-tertiary border-0 m-0 p-0">
             <div class="container-fluid">
               <form class="d-flex" role="search" method="post" action="busquedaInventario.php" >
-                <input class="form-control me-3 " type="text" name="producto" placeholder="Buscar producto" aria-label="Search">
+                <input class="form-control me-3 " type="text" name="reserva" placeholder="Buscar reserva" aria-label="Search">
                 <button class="btn rounded-3" type="submit" style="background-color: #F24C3D; color:#F2F2F2;">Buscar</button>
               </form>
             </div>
@@ -59,24 +60,27 @@
 </div>
 
 <form method="post" action="add_inventario.php">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label" style="color: #F2F2F2;">Nombre</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nombre" name="nombre">
+        <div class="row">
+            <div class="col">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="clienteid" name="clienteid">
+            </div>
+
+            <div class="col">
+                <input type="text" class="form-control" placeholder="paqueteid" aria-label="paqueteid" name="paqueteid">
+            </div>
         </div>
         <div class="row">
             <div class="col">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="apellido" name="apellido">
+                <input type="text" class="form-control" placeholder="fecha" aria-label="fecha" name="fecha">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Email" aria-label="Email" name="Email">
+                <input type="text" class="form-control" placeholder="estado" aria-label="estado" name="estado">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="metodopago" aria-label="metodopago" name="metodopago">
             </div>
         </div>     
-        <div class="row">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Telefono" aria-label="Telefono" name="provedor">
-            </div>
-        
-        </div>
+      
         <div class="p-2 d-flex justify-content-center">
             <button type="submit" type="submit" class="btn btn-primary border-0 btn-outline-light fw-bolder" style="background-color: #F2F2F2; color: #F24C3D;">Guardar</button>
         </div>
@@ -97,7 +101,12 @@
                 </div>
 
                 <div class="d-flex justify-content-between">
-                    <h5 class="card-title"><?php echo $row['idpaquete'] ?></h5>
+                    <h5 class="card-title"><?php echo $row['paqueteid'] ?></h5>
+                </div>
+
+                
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title"><?php echo $row['fechareserva'] ?></h5>
                 </div>
 
                 
@@ -107,10 +116,13 @@
 
                 
                 <div class="d-flex justify-content-between">
-                    <h5 class="card-title"><?php echo $row['metodopago'] ?></h5>
+                    <h5 class="card-title"><?php echo $row['metodoPago'] ?></h5>
                 </div>
 
                 
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title"><?php echo $row['total'] ?></h5>
+                </div>
 
             </div>
           </div>
@@ -162,13 +174,13 @@
             <a href="" style="background-color: transparent; color: #F24C3D;"><i class="fa-brands fa-linkedin" style="background-color: transparent;" ></i></a>
         </div>
         <div class="d-flex gap-2 align-items-center">
-            <div>Fabian Andres Roman Garnica</div>
+            <div>Leonardo Pastrana Rosario</div>
             <a href="" style="background-color: transparent; color: #F24C3D;"><i class="fa-brands fa-github" style="background-color: transparent;"></i></a>
             <a href="" style="background-color: transparent; color: #F24C3D;"><i class="fa-brands fa-linkedin" style="background-color: transparent;" ></i></a>
         </div>
     </div>
     </div>
-        <div class="py-1 text-center">----- 2023 -----</div>
+        <div class="py-1 text-center">----- 2024 -----</div>
 </footer>
 
 
