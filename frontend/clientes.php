@@ -50,7 +50,7 @@
         <nav class="navbar bg-body-tertiary border-0 m-0 p-0">
             <div class="container-fluid">
               <form class="d-flex" role="search" method="post" action="busquedaInventario.php" >
-                <input class="form-control me-3 " type="text" name="producto" placeholder="Buscar cliente" aria-label="Search">
+                <input class="form-control me-3 " type="text" name="cliente" placeholder="Buscar cliente" aria-label="Search">
                 <button class="btn rounded-3" type="submit" style="background-color: #F24C3D; color:#F2F2F2;">Buscar</button>
               </form>
             </div>
@@ -163,13 +163,13 @@
             <a href="" style="background-color: transparent; color: #F24C3D;"><i class="fa-brands fa-linkedin" style="background-color: transparent;" ></i></a>
         </div>
         <div class="d-flex gap-2 align-items-center">
-            <div>Fabian Andres Roman Garnica</div>
+            <div>Leonardo Pastrana Rosario</div>
             <a href="" style="background-color: transparent; color: #F24C3D;"><i class="fa-brands fa-github" style="background-color: transparent;"></i></a>
             <a href="" style="background-color: transparent; color: #F24C3D;"><i class="fa-brands fa-linkedin" style="background-color: transparent;" ></i></a>
         </div>
     </div>
     </div>
-        <div class="py-1 text-center">----- 2023 -----</div>
+        <div class="py-1 text-center">----- 2024 -----</div>
 </footer>
 
 
