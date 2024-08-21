@@ -16,12 +16,12 @@
             
             <div class="w-75 p-2 p-sm-4 justify-content-center">
               <h1 class="text-center fs-2 fw-bold" style="color: #F24C3D;">E&L</h1>
-              <form method="post" action="rd_usuario.php">
+              <form method="post" action="../backend/api/login.php">
                 <div class="mb-3">
                   <input type="text" class="form-control" name ="usuario" id="usuario" placeholder="Usuario">
                 </div>
                 <div class="mb-3">
-                  <input type="password" class="form-control" name ="contrasena" id="contrasena" placeholder="Contraseña">
+                  <input type="password" class="form-control" name ="contra" id="contra" placeholder="Contraseña">
                 </div>
                 <div class="text-center">
                   <button type="submit" class="btn w-100 rounded-1" id="submitLogin">Ingresar</button>
