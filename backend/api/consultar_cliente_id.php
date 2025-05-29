@@ -16,7 +16,7 @@ if (isset($_POST['id_cliente'])) {
         // Fetch the client data
         $cliente = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if ($cliente) {
+        if  ($cliente) {
             // Return the client data as JSON
             echo json_encode($cliente);
         } else {
